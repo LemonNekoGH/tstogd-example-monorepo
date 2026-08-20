@@ -1,0 +1,4 @@
+node_modules/
+packages/game/.tstogd_modules/
+packages/game/scripts/
+packages/game/src/_typings/

@@ -1,0 +1,8 @@
+; Engine configuration file.
+; Edit this file with the Godot editor.
+
+config_version=5
+
+[application]
+
+config/name="tstogd external package example"

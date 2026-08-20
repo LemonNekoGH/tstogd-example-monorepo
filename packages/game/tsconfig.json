@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noLib": true,
+    "strict": true,
+    "noEmit": true,
+    "types": []
+  },
+  "include": [
+    "../../node_modules/typescript-to-gdscript/typings",
+    "src/**/*.ts",
+    "src/_typings/**/*.d.ts"
+  ]
+}
