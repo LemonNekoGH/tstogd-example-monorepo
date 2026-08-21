@@ -1,6 +1,6 @@
 # tstogd external package monorepo
 
-This minimal Yarn workspace demonstrates a Godot application importing a
+This minimal pnpm workspace demonstrates a Godot application importing a
 TypeScript source package from the same monorepo.
 
 The sample installs tstogd from the fork's
@@ -10,8 +10,8 @@ this temporary Git dependency. Run:
 ```sh
 mise trust
 mise install
-yarn install
-yarn verify
+pnpm install
+pnpm verify
 ```
 
 `@tstogd-example/game` imports `@tstogd-example/shared` normally. There is no

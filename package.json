@@ -1,14 +1,11 @@
 {
   "name": "tstogd-example-monorepo",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "pnpm@11.21.0",
   "scripts": {
-    "convert": "yarn workspace @tstogd-example/game convert",
-    "typecheck": "yarn workspace @tstogd-example/game tsc -p tsconfig.json",
-    "verify": "yarn convert && yarn typecheck"
+    "convert": "pnpm --filter @tstogd-example/game run convert",
+    "typecheck": "pnpm --filter @tstogd-example/game exec tsc -p tsconfig.json",
+    "verify": "pnpm convert && pnpm typecheck"
   },
   "devDependencies": {
     "typescript": "^5.9.0",

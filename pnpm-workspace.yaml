@@ -1,0 +1,8 @@
+packages:
+  - packages/*
+
+allowBuilds:
+  tree-sitter: true
+  tree-sitter-gdscript: true
+  tree-sitter-godot-resource: true
+  'typescript-to-gdscript@git+https://github.com/LemonNekoGH/typescript-to-gdscript.git': true

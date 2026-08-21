@@ -6,6 +6,6 @@
     "convert": "tstogd convert --no-check"
   },
   "dependencies": {
-    "@tstogd-example/shared": "1.0.0"
+    "@tstogd-example/shared": "workspace:*"
   }
 }

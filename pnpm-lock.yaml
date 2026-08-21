@@ -1,0 +1,184 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      typescript:
+        specifier: ^5.9.0
+        version: 5.9.3
+      typescript-to-gdscript:
+        specifier: github:LemonNekoGH/typescript-to-gdscript#demo/external-package-sources
+        version: https://codeload.github.com/LemonNekoGH/typescript-to-gdscript/tar.gz/344e199247b346ac6142c482c6bcd53a27672aaf(typescript@5.9.3)
+
+  packages/game:
+    dependencies:
+      '@tstogd-example/shared':
+        specifier: workspace:*
+        version: link:../shared
+
+  packages/shared: {}
+
+packages:
+
+  balanced-match@4.0.4:
+    resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
+    engines: {node: 18 || 20 || >=22}
+
+  brace-expansion@5.0.9:
+    resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
+    engines: {node: 20 || >=22}
+
+  chokidar@4.0.3:
+    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
+    engines: {node: '>= 14.16.0'}
+
+  commander@13.1.0:
+    resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
+    engines: {node: '>=18'}
+
+  glob@13.0.6:
+    resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
+    engines: {node: 18 || 20 || >=22}
+
+  lru-cache@11.5.2:
+    resolution: {integrity: sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==}
+    engines: {node: 20 || >=22}
+
+  minimatch@10.2.6:
+    resolution: {integrity: sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==}
+    engines: {node: 18 || 20 || >=22}
+
+  minipass@7.1.3:
+    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
+    engines: {node: '>=16 || 14 >=14.17'}
+
+  node-addon-api@8.9.2:
+    resolution: {integrity: sha512-VijLXbi3UACN69I0JVXJsX4tjACjNoQDgv2gTF6sx2wWEi8tkSg2eX8p5gSIFi8z2+DL3oHmY6OyKce38SDolg==}
+    engines: {node: ^18 || ^20 || >= 21}
+
+  node-gyp-build@4.8.4:
+    resolution: {integrity: sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ==}
+    hasBin: true
+
+  path-scurry@2.0.2:
+    resolution: {integrity: sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==}
+    engines: {node: 18 || 20 || >=22}
+
+  readdirp@4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
+    engines: {node: '>= 14.18.0'}
+
+  source-map@0.7.6:
+    resolution: {integrity: sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==}
+    engines: {node: '>= 12'}
+
+  tree-sitter-gdscript@6.1.0:
+    resolution: {integrity: sha512-Uy5+GWLkec2JaS1mamiJYsC9j/JoW2FxFq4bnji95gyTtMTsqO6+RSVIaBTU/vRGSNEi3PVDZzyV0j3B4RdntA==}
+    peerDependencies:
+      tree-sitter: ^0.21.1
+    peerDependenciesMeta:
+      tree-sitter:
+        optional: true
+
+  tree-sitter-godot-resource@0.7.0:
+    resolution: {integrity: sha512-WH/Od7ZniWYtY4ArjmeAXHFLz1V+VLyuiARusVWDpQYPNbqZblTd8gqfFttjpJG4mITZf/RCS8fBbnwzyzmPKg==}
+    peerDependencies:
+      tree-sitter: ^0.21.1
+    peerDependenciesMeta:
+      tree-sitter:
+        optional: true
+
+  tree-sitter@0.22.4:
+    resolution: {integrity: sha512-usbHZP9/oxNsUY65MQUsduGRqDHQOou1cagUSwjhoSYAmSahjQDAVsh9s+SlZkn8X8+O1FULRGwHu7AFP3kjzg==}
+
+  typescript-to-gdscript@https://codeload.github.com/LemonNekoGH/typescript-to-gdscript/tar.gz/344e199247b346ac6142c482c6bcd53a27672aaf:
+    resolution: {gitHosted: true, integrity: sha512-AmmY7/Xpqmvfw+Qksc5KCjDOM/yK0q4vNVeqE9GXuoyyrYQslTKN3qwoeNSEWfRytgmn8hEr3sVhOjE+HXTTVQ==, tarball: https://codeload.github.com/LemonNekoGH/typescript-to-gdscript/tar.gz/344e199247b346ac6142c482c6bcd53a27672aaf}
+    version: 0.1.2
+    engines: {node: '>=22'}
+    hasBin: true
+    peerDependencies:
+      typescript: '>=5.5.0'
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+snapshots:
+
+  balanced-match@4.0.4: {}
+
+  brace-expansion@5.0.9:
+    dependencies:
+      balanced-match: 4.0.4
+
+  chokidar@4.0.3:
+    dependencies:
+      readdirp: 4.1.2
+
+  commander@13.1.0: {}
+
+  glob@13.0.6:
+    dependencies:
+      minimatch: 10.2.6
+      minipass: 7.1.3
+      path-scurry: 2.0.2
+
+  lru-cache@11.5.2: {}
+
+  minimatch@10.2.6:
+    dependencies:
+      brace-expansion: 5.0.9
+
+  minipass@7.1.3: {}
+
+  node-addon-api@8.9.2: {}
+
+  node-gyp-build@4.8.4: {}
+
+  path-scurry@2.0.2:
+    dependencies:
+      lru-cache: 11.5.2
+      minipass: 7.1.3
+
+  readdirp@4.1.2: {}
+
+  source-map@0.7.6: {}
+
+  tree-sitter-gdscript@6.1.0(tree-sitter@0.22.4):
+    dependencies:
+      node-addon-api: 8.9.2
+      node-gyp-build: 4.8.4
+    optionalDependencies:
+      tree-sitter: 0.22.4
+
+  tree-sitter-godot-resource@0.7.0(tree-sitter@0.22.4):
+    dependencies:
+      node-addon-api: 8.9.2
+      node-gyp-build: 4.8.4
+    optionalDependencies:
+      tree-sitter: 0.22.4
+
+  tree-sitter@0.22.4:
+    dependencies:
+      node-addon-api: 8.9.2
+      node-gyp-build: 4.8.4
+
+  typescript-to-gdscript@https://codeload.github.com/LemonNekoGH/typescript-to-gdscript/tar.gz/344e199247b346ac6142c482c6bcd53a27672aaf(typescript@5.9.3):
+    dependencies:
+      chokidar: 4.0.3
+      commander: 13.1.0
+      glob: 13.0.6
+      minimatch: 10.2.6
+      source-map: 0.7.6
+      tree-sitter: 0.22.4
+      tree-sitter-gdscript: 6.1.0(tree-sitter@0.22.4)
+      tree-sitter-godot-resource: 0.7.0(tree-sitter@0.22.4)
+      typescript: 5.9.3
+
+  typescript@5.9.3: {}
